@@ -84,24 +84,24 @@ Specify a Different Chain and Namespace:
 
 # How It Works
 
-### Placeholder Substitution:
-        The script reads a YAML template file (fetch-modules.ktpl by default) containing placeholders like {{{chain}}} and {{{namespace}}}.
-        These placeholders are dynamically replaced with the values provided via command-line arguments.
+### Placeholder Substitution: 
+The script reads a YAML template file (fetch-modules.ktpl by default) containing placeholders like {{{chain}}} and {{{namespace}}}. These placeholders are dynamically replaced with the values provided via command-line arguments.
 
 ### JSON Generation:
-        Using the substituted YAML file, the script executes the kda gen command to generate a corresponding JSON configuration file (temp_fetch_module_code.json).
+        
+  Using the substituted YAML file, the script executes the kda gen command to generate a corresponding JSON configuration file (temp_fetch_module_code.json).
 
 ### Fetching Module Data:
-        The script then runs the kda local command with the generated JSON and specified network URL to retrieve module information.
+  
+  The script then runs the kda local command with the generated JSON and specified network URL to retrieve module information.
 
 ### Parsing and File Creation:
-        The JSON output from kda local is parsed to extract each module's name and code.
-        For each module:
-            A directory is created based on its namespace.
-            A .pact file is generated within this directory, named after the module (e.g., KDA.pact).
+  
+  The JSON output from kda local is parsed to extract each module's name and code.   
 
 ### Cleanup:
-        Temporary files (substituted_config.ktpl and temp_fetch_module_code.json) are deleted after processing to maintain a clean workspace.
+        
+  Temporary files (substituted_config.ktpl and temp_fetch_module_code.json) are deleted after processing to maintain a clean workspace.
 
 
 # Contributing
