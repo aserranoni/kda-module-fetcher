@@ -52,10 +52,8 @@ Before using the **KDA Module Fetcher**, ensure you have the following installed
 
 Make the Script Executable:
 
-```sh
-   
+```sh  
    chmod +x fetch_namespace_modules.py
-
 ```
 
 
@@ -66,9 +64,7 @@ Basic Usage with Default Arguments:
 
 
 ``` sh
-
 ./fetch_namespace_modules.py
-
 ```
 
 
@@ -77,9 +73,7 @@ This command uses the default network URL (https://testnet.mindsend.xyz), chain 
 Specify a Different Chain and Namespace:
 
 ``` sh
-
 ./fetch_namespace_modules.py --chain "1" --namespace "n_abcdef123456"
-
 ```
 
 # How It Works
