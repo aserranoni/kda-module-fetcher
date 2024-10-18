@@ -1,6 +1,4 @@
-# KDA Module Processor
-
-![KDA Logo](https://www.kadena.io/favicon.ico)
+# KDA Module Processor ![KDA Logo](https://www.kadena.io/favicon.ico)
 
 **KDA Module Fetcher** is a versatile and automated tool designed to streamline the process of fetching and organizing KDA (Kadena) smart contract modules. This script fetches every module that is deployed on a given chain under a given namespace.
 
