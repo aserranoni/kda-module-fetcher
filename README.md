@@ -53,7 +53,7 @@ Before using the **KDA Module Fetcher**, ensure you have the following installed
 Make the Script Executable:
 
 ```sh  
-   chmod +x fetch_namespace_modules.py
+chmod +x fetch_namespace_modules.py
 ```
 
 
